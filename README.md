@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class Rotate {
+public class RotateMatrix {
     public static void rotate(int[][] A)
     {
         int N = A.length;
@@ -36,10 +36,12 @@ public class Rotate {
             
         };
  
-        rotate(A);
- 
-        for (var r: A) {
-            System.out.println(Arrays.toString(r));
+       RotateMatrix.rotate(A);
+        for (int i = 0; i < A.length; i++){
+            for (int j = 0; j < A.length; j++){
+                System.out.print(A[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 }
